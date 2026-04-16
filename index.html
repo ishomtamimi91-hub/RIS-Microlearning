@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflective Inquiry Sheet — Fiqih Lingkungan &amp; Ekologi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="bg-texture"></div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toast-msg">Jawaban berhasil tersimpan!</span>
+  </div>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="page-header">
+      <div class="header-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆</span>
+        <span class="ornament-line"></span>
+      </div>
+      <p class="header-label">REFLECTIVE INQUIRY SHEET</p>
+      <h1 class="header-title">Fiqih Kontemporer</h1>
+      <h2 class="header-subtitle">Fiqih Lingkungan &amp; Ekologi</h2>
+      <div class="header-tag">Pendekatan Transisi Andragogi – Heutagogi</div>
+      <div class="header-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆</span>
+        <span class="ornament-line"></span>
+      </div>
+    </header>
+
+    <!-- IDENTITAS -->
+    <section class="identity-section">
+      <div class="identity-grid">
+        <div class="identity-field">
+          <label for="id-nama">Nama</label>
+          <input type="text" id="id-nama" name="nama" class="identity-input" placeholder="________________________________" autocomplete="off" />
+        </div>
+        <div class="identity-field">
+          <label for="id-nim">NIM</label>
+          <input type="text" id="id-nim" name="nim" class="identity-input" placeholder="______________________________" autocomplete="off" />
+        </div>
+        <div class="identity-field">
+          <label for="id-kelas">Kelas</label>
+          <input type="text" id="id-kelas" name="kelas" class="identity-input" placeholder="_______________________________" autocomplete="off" />
+        </div>
+        <div class="identity-field">
+          <label for="id-tanggal">Tanggal</label>
+          <input type="text" id="id-tanggal" name="tanggal" class="identity-input" placeholder="___________________________" autocomplete="off" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PANDUAN -->
+    <div class="panduan-box">
+      <p class="panduan-title">PANDUAN PENGGUNAAN</p>
+      <p class="panduan-text">Lembar ini bukan ujian dan tidak ada jawaban yang benar atau salah. Ia adalah ruang berpikir milik Anda. Isi setiap bagian secara jujur berdasarkan proses berpikir Anda sendiri. Pada bagian akhir, Anda bebas melampaui struktur yang tersedia dan menentukan sendiri arah eksplorasi Anda selanjutnya.</p>
+    </div>
+
+    <!-- BAGIAN A -->
+    <section class="bagian" id="bagian-a">
+      <div class="bagian-header">
+        <span class="bagian-code">BAGIAN A</span>
+        <span class="bagian-title">Pemantik Kesadaran | Andragogi → Heutagogi</span>
+      </div>
+      <blockquote class="quote-block">
+        "Bumi ini bukan warisan dari nenek moyang kita — ia adalah pinjaman dari anak cucu kita."
+      </blockquote>
+      <p class="bagian-instruction">Sebelum membaca ayat atau pendapat ulama manapun, di manakah posisi Anda terhadap pernyataan ini?</p>
+
+      <div class="field-group">
+        <label class="field-label">Respons awal saya — sebelum membaca referensi apapun:</label>
+        <textarea id="a_respons_awal" name="a_respons_awal" class="field-textarea tall" placeholder="Tuliskan respons awal Anda di sini..."></textarea>
+      </div>
+      <div class="field-group">
+        <label class="field-label">Keyakinan atau asumsi apa yang mendasari respons saya tersebut?</label>
+        <textarea id="a_asumsi" name="a_asumsi" class="field-textarea" placeholder="Tuliskan keyakinan atau asumsi Anda..."></textarea>
+      </div>
+    </section>
+
+    <!-- BAGIAN B -->
+    <section class="bagian" id="bagian-b">
+      <div class="bagian-header">
+        <span class="bagian-code">BAGIAN B</span>
+        <span class="bagian-title">Eksplorasi Mandiri | Dalil &amp; Maqashid Syariah</span>
+      </div>
+      <p class="bagian-instruction">Temukan sendiri dalil — dari Al-Qur'an, hadis, atau pendapat ulama — yang menurut Anda paling kuat berbicara tentang tanggung jawab manusia terhadap lingkungan. Tidak ada ketentuan jumlah. Pilihan dalil adalah keputusan intelektual Anda.</p>
+
+      <div class="table-wrapper">
+        <table class="dalil-table" id="dalil-table">
+          <thead>
+            <tr>
+              <th>Dalil / Sumber</th>
+              <th>Isi / Makna <span class="th-note">(dengan bahasa saya sendiri)</span></th>
+              <th>Mengapa saya memilih ini?</th>
+            </tr>
+          </thead>
+          <tbody id="dalil-body">
+            <tr>
+              <td><textarea class="cell-input" placeholder="e.g. QS. Al-A'raf: 56"></textarea></td>
+              <td><textarea class="cell-input" placeholder="Makna dalil..."></textarea></td>
+              <td><textarea class="cell-input" placeholder="Alasan memilih..."></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea class="cell-input" placeholder="e.g. HR. Muslim no. ..."></textarea></td>
+              <td><textarea class="cell-input" placeholder="Makna dalil..."></textarea></td>
+              <td><textarea class="cell-input" placeholder="Alasan memilih..."></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea class="cell-input" placeholder=""></textarea></td>
+              <td><textarea class="cell-input" placeholder=""></textarea></td>
+              <td><textarea class="cell-input" placeholder=""></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="add-row-btn" id="add-row-btn">+ Tambah Baris</button>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Dari semua dalil yang saya temukan, mana yang paling mengubah cara pandang saya — dan mengapa?</label>
+        <textarea id="b_refleksi_dalil" name="b_refleksi_dalil" class="field-textarea tall" placeholder="Tuliskan refleksi Anda..."></textarea>
+      </div>
+    </section>
+
+    <!-- BAGIAN C -->
+    <section class="bagian" id="bagian-c">
+      <div class="bagian-header">
+        <span class="bagian-code">BAGIAN C</span>
+        <span class="bagian-title">Ijtihad Personal | Double-Loop Reflection</span>
+      </div>
+      <div class="scenario-box">
+        <p>Di kota Anda, sebuah perusahaan kelapa sawit berencana membuka lahan baru dengan menebang <strong>3.000 hektar hutan</strong> yang menjadi sumber air bagi 5 desa. Perusahaan menjanjikan <strong>2.000 lapangan kerja</strong> bagi masyarakat sekitar. Sebagai seorang yang memahami Fiqih Kontemporer — apa fatwa Anda?</p>
+      </div>
+
+      <div class="loop-group">
+        <div class="loop-header">
+          <span class="loop-badge">LOOP 1</span>
+          <span class="loop-title">Apa pendapat fiqih saya?</span>
+        </div>
+        <p class="loop-hint">(Posisi: boleh / tidak boleh / bersyarat — beserta argumentasi dalil)</p>
+        <div class="radio-group">
+          <label class="radio-label"><input type="radio" name="loop1_posisi" value="Boleh" /> Boleh</label>
+          <label class="radio-label"><input type="radio" name="loop1_posisi" value="Tidak Boleh" /> Tidak Boleh</label>
+          <label class="radio-label"><input type="radio" name="loop1_posisi" value="Bersyarat" /> Bersyarat</label>
+        </div>
+        <textarea id="c_loop1_argumen" name="c_loop1_argumen" class="field-textarea tall" placeholder="Tuliskan argumentasi dan dalil Anda..."></textarea>
+      </div>
+
+      <div class="loop-group">
+        <div class="loop-header">
+          <span class="loop-badge">LOOP 2</span>
+          <span class="loop-title">Dari mana datangnya pendapat itu?</span>
+        </div>
+        <p class="loop-hint">(Apakah dari dalil yang kuat, dari kebiasaan berpikir saya, dari pengaruh sosial, atau dari asumsi yang belum saya periksa?)</p>
+        <textarea id="c_loop2_asal" name="c_loop2_asal" class="field-textarea tall" placeholder="Telusuri asal-usul pendapat Anda..."></textarea>
+      </div>
+
+      <div class="loop-group">
+        <div class="loop-header">
+          <span class="loop-badge">LOOP 3</span>
+          <span class="loop-title">Jika pendapat saya salah, apa yang berubah?</span>
+        </div>
+        <p class="loop-hint">(Apa yang akan berbeda dalam cara saya memahami Islam dan lingkungan jika ternyata saya keliru?)</p>
+        <textarea id="c_loop3_salah" name="c_loop3_salah" class="field-textarea tall" placeholder="Bayangkan dan tuliskan kemungkinan tersebut..."></textarea>
+      </div>
+    </section>
+
+    <!-- BAGIAN D -->
+    <section class="bagian" id="bagian-d">
+      <div class="bagian-header">
+        <span class="bagian-code">BAGIAN D</span>
+        <span class="bagian-title">Refleksi Nilai Islam dalam Kehidupan Nyata</span>
+      </div>
+      <p class="bagian-instruction">Fiqih yang tidak turun ke tanah adalah fiqih yang belum selesai. Bagian ini mengajak Anda menjembatani pengetahuan normatif dengan realitas yang Anda hidupi setiap hari.</p>
+
+      <div class="nilai-table-wrapper">
+        <table class="nilai-table">
+          <thead>
+            <tr>
+              <th>Nilai / Konsep Islam</th>
+              <th>Wujudnya dalam Kehidupan Nyata Saya</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="nilai-concept">
+                <span class="arabic">Khalifah fil ardh</span>
+                <span class="nilai-desc">— manusia sebagai penjaga bumi</span>
+              </td>
+              <td><textarea id="d_khalifah" name="d_khalifah" class="cell-input" placeholder="Wujud nyata dalam kehidupan saya..."></textarea></td>
+            </tr>
+            <tr>
+              <td class="nilai-concept">
+                <span class="arabic">Lā dharara wa lā dhirār</span>
+                <span class="nilai-desc">— tidak boleh memberi mudarat</span>
+              </td>
+              <td><textarea id="d_ladhara" name="d_ladhara" class="cell-input" placeholder="Wujud nyata dalam kehidupan saya..."></textarea></td>
+            </tr>
+            <tr>
+              <td class="nilai-concept">
+                <span class="arabic">Ḥifẓh al-nasl &amp; Ḥifẓh al-māl</span>
+                <span class="nilai-desc">— menjaga keturunan &amp; harta</span>
+              </td>
+              <td><textarea id="d_hifzh" name="d_hifzh" class="cell-input" placeholder="Wujud nyata dalam kehidupan saya..."></textarea></td>
+            </tr>
+            <tr>
+              <td class="nilai-concept">
+                <span class="nilai-desc nilai-custom">Nilai lain yang saya temukan sendiri:</span>
+                <textarea id="d_nilai_custom_nama" name="d_nilai_custom_nama" class="cell-input" placeholder="Nama nilai..."></textarea>
+              </td>
+              <td><textarea id="d_nilai_custom_isi" name="d_nilai_custom_isi" class="cell-input" placeholder="Wujud nyata dalam kehidupan saya..."></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="field-group highlight-field">
+        <label class="field-label">Dari seluruh nilai di atas, <strong>satu perubahan perilaku konkret</strong> yang AKAN saya lakukan dalam 7 hari ke depan:</label>
+        <textarea id="d_komitmen" name="d_komitmen" class="field-textarea" placeholder="Tuliskan satu komitmen konkret Anda..."></textarea>
+      </div>
+    </section>
+
+    <!-- BAGIAN E -->
+    <section class="bagian bagian-e" id="bagian-e">
+      <div class="bagian-header">
+        <span class="bagian-code">BAGIAN E</span>
+        <span class="bagian-title">Melampaui Struktur | Ruang Heutagogi Anda</span>
+      </div>
+      <p class="bagian-instruction">Bagian A hingga D adalah scaffold — perancah yang bisa Anda tinggalkan.</p>
+      <div class="heutagogi-note">
+        <p>Bagian ini <strong>sepenuhnya milik Anda</strong>. Tidak ada pertanyaan. Tidak ada kolom. Tidak ada arahan.</p>
+        <p>Gunakan ruang ini untuk melakukan apa yang menurut Anda perlu dilakukan dengan seluruh pengalaman berpikir Anda hari ini.</p>
+      </div>
+      <textarea id="e_ruang_bebas" name="e_ruang_bebas" class="field-textarea heutagogi-area" placeholder="Ruang bebas Anda..."></textarea>
+    </section>
+
+    <!-- BAGIAN F -->
+    <section class="bagian" id="bagian-f">
+      <div class="bagian-header">
+        <span class="bagian-code">BAGIAN F</span>
+        <span class="bagian-title">Muhasabah | Evaluasi Diri &amp; Rencana Belajar Mandiri</span>
+      </div>
+
+      <div class="muhasabah-grid">
+        <div class="muhasabah-left">
+          <h3 class="sub-section-title">Muhasabah Berpikir</h3>
+          <p class="muhasabah-question">Seberapa jujur saya berpikir hari ini?</p>
+          <div class="skala-wrapper">
+            <label class="field-label">Skala 1–10</label>
+            <div class="skala-track" id="skala-track">
+              <span class="skala-label skala-min">1</span>
+              <input type="range" min="1" max="10" value="5" class="skala-slider" id="skala-slider" name="f_skala_kejujuran" />
+              <span class="skala-label skala-max">10</span>
+              <span class="skala-value" id="skala-value">5</span>
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label">Alasannya:</label>
+            <textarea id="f_alasan_skala" name="f_alasan_skala" class="field-textarea" placeholder="Mengapa saya memberi nilai tersebut..."></textarea>
+          </div>
+        </div>
+
+        <div class="muhasabah-right">
+          <h3 class="sub-section-title">Rencana Belajar Mandiri Saya</h3>
+          <p class="muhasabah-hint">(bukan karena dosen meminta)</p>
+          <div class="field-group">
+            <label class="field-label">Sumber / buku / tokoh yang ingin saya eksplorasi:</label>
+            <textarea id="f_sumber_belajar" name="f_sumber_belajar" class="field-textarea" placeholder="Tuliskan referensi yang ingin Anda pelajari..."></textarea>
+          </div>
+          <div class="field-group">
+            <label class="field-label">Pertanyaan yang masih mengganggu saya:</label>
+            <textarea id="f_pertanyaan" name="f_pertanyaan" class="field-textarea" placeholder="Pertanyaan terbuka yang belum terjawab..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <blockquote class="closing-quote">
+        "Tuntutlah ilmu, karena sesungguhnya menuntut ilmu adalah ibadah kepada Allah."
+      </blockquote>
+      <p class="closing-text">Belajar yang sesungguhnya baru saja dimulai — bukan selesai — ketika lembar ini Anda tutup.</p>
+    </section>
+
+    <!-- FOOTER ACTIONS -->
+    <div class="action-bar">
+      <button class="btn btn-secondary" id="btn-reset">↺ Reset Form</button>
+      <button class="btn btn-secondary" id="btn-print">⎙ Cetak / Simpan PDF</button>
+      <button class="btn btn-primary" id="btn-submit">
+        <span class="btn-icon">⬆</span>
+        <span class="btn-text">Kirim Jawaban</span>
+      </button>
+    </div>
+
+    <!-- SUBMIT STATUS -->
+    <div class="submit-status" id="submit-status" style="display:none;">
+      <div class="status-inner">
+        <div class="status-spinner" id="status-spinner"></div>
+        <p class="status-text" id="status-text">Mengirim jawaban Anda...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
